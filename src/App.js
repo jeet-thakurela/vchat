@@ -29,7 +29,8 @@ function App() {
       <Route path="/" element={user ? <RoomPage /> : <LoginPage />} />
 
       {/* RoomPage is only accessible if the user is authenticated */}
-      <Route path="/room/:roomId" element={user ? <RoomPage /> : <Navigate to="/" />} />
+      <Route path="/room/:roomId" component={RoomPage} />
+
     </Routes>
   );
 }

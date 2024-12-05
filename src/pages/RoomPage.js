@@ -39,9 +39,15 @@ const RoomPage = () => {
           name: 'Personal link',
           url: window.location.protocol + '//' + window.location.host + window.location.pathname + '?roomID=' + roomID,
         }],
-        scenario: {
-          mode: ZegoUIKitPrebuilt.VideoConference,
-        },
+        // scenario: {
+        //   mode: ZegoUIKitPrebuilt.VideoConference,
+        // },
+         	scenario: {
+           		mode: "GroupCall",
+           		config: {
+           			role: "Host",
+         		},
+         	},
         turnOnMicrophoneWhenJoining: true,
         turnOnCameraWhenJoining: true,
         showMyCameraToggleButton: true,

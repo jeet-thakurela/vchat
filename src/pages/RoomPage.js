@@ -50,9 +50,9 @@ const RoomPage = () => {
         showScreenSharingButton: true,
         showTextChat: true,
         showUserList: true,
-        maxUsers: 10,
-        layout: "Auto",
-        showLayoutButton: false,
+        maxUsers: 50,
+        layout: "Grid",
+        showLayoutButton: true,
       });
 
       // Set the shared link in the state
